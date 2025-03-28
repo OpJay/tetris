@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tetris Refactored</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Tetris</h1>
+  <div id="game-container">
+    <canvas id="tetris-canvas"></canvas> <!-- Width/Height set by JS -->
+    <div id="info-panel">
+      <div>Score: <span id="score-board">0</span></div>
+      <div>Stage: <span id="stage-board">1</span></div> <!-- Added Stage Display -->
+      <div>Lines: <span id="lines-board">0 / 10</span></div> <!-- Added Lines Display -->
+    </div>
+  </div>
+  <!-- Add controls section if needed -->
+  <!-- <div id="controls">
+    <p>Controls: Left/Right Arrows, Q/W/Up Arrow (Rotate), Down Arrow (Soft Drop), Space (Hard Drop)</p>
+  </div> -->
+
+  <script src="game.js" defer></script>
+</body>
+</html>

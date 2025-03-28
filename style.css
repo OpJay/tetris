@@ -1,0 +1,66 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  min-height: 100vh; /* Ensure body takes full viewport height */
+  margin: 0; /* Remove default body margin */
+}
+
+#game-container {
+  display: flex; /* Arrange canvas and score side-by-side or vertically */
+  align-items: flex-start; /* Align items to the top */
+  gap: 20px; /* Space between canvas and score/controls */
+}
+
+#tetris-canvas {
+  /* width and height are set by JS */
+  background-color: #222;
+  border: 2px solid #fff;
+  display: block; /* Remove extra space below canvas */
+}
+
+/* Styles for the information panel */
+#info-panel {
+  display: flex;
+  flex-direction: column; /* Stack info items vertically */
+  gap: 10px; /* Space between info items */
+  font-size: 1.2em;
+  text-align: left; /* Align text to the left within the panel */
+  min-width: 120px; /* Give the panel some width */
+  padding: 10px;
+  border: 1px solid #555; /* Optional border */
+  background-color: #111; /* Slightly different background */
+}
+
+#info-panel div {
+  /* Style for each line (Score, Stage, Lines) */
+}
+
+#info-panel span {
+  /* Style for the values (score, stage number, lines count) */
+  font-weight: bold;
+  float: right; /* Align values to the right */
+  min-width: 50px; /* Ensure space for values */
+  text-align: right;
+}
+
+
+h1 {
+  margin-bottom: 10px; /* Adjust spacing below title */
+  font-family: 'Press Start 2P', cursive; /* 폰트 변경 */
+  font-size: 3em; /* 글자 크기 변경 */
+  color: #FFD700; /* 글자 색상 변경 (금색) */
+  text-shadow: 2px 2px 4px #000000; /* 텍스트 그림자 추가 */
+  -webkit-text-stroke: 1px black; /* 텍스트 테두리 추가 (검정색) */
+}
+
+/* Add styles for potential future elements like controls */
+#controls {
+  margin-top: 20px;
+  /* Style buttons or instructions here */
+}
